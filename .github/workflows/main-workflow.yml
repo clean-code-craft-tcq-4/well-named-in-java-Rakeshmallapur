@@ -18,6 +18,8 @@ jobs:
         java-version: 1.8
     - name: Build
       run: javac colorcoder/Main.java
-      working-directory: colorcoder/*
+      working-directory: colorcoder/ColorPair.java
+       working-directory: colorcoder/ColorPairImpl.java
+        working-directory: colorcoder/ColorPairTestClass.java
     - name: Verify color coding
       run: java -ea -classpath . colorcoder.Main
