@@ -19,5 +19,4 @@ jobs:
     - name: Build
       run: javac colorcoder/Main.java
     - name: Verify color coding
-      run: java -ea -classpath . colorcoder
-
+      run: java -ea -classpath . colorcoder/Main.java
